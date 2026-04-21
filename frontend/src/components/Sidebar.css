@@ -1,0 +1,108 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #1f2d3d;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  padding: 15px;
+  font-size: 20px;
+  background: #367fa9;
+  font-weight: bold;
+}
+
+/* User */
+.user {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #2c3e50;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.role {
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px 15px;
+  cursor: pointer;
+  color: #b8c7ce;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li:hover {
+  background: #1e282c;
+  color: white;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+/* Submenu */
+.submenu {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.arrow {
+  font-size: 12px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #1f2d3d;
+  color: white;
+  position: fixed; /* ✅ locks sidebar */
+  left: 0;
+  top: 0;
+}
+
+.arrow {
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(90deg);
+}
+
+.sidebar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* Chrome scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
